@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '/node_modules/flowbite-vue/dist/index.css';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/dm-sans';
+
+$resinOrange: #f07e19;
+
+@layer base {
+  h1 {
+    @apply text-5xl font-extrabold font-heading mb-4;
+  }
+  h2 {
+    @apply text-3xl font-semibold font-heading mb-2;
+  }
+}
+
+html,
+body,
+#app {
+  @apply h-full;
+}
+
+#app {
+  @apply pt-10;
+}
+
+main {
+  //  @apply p-12 bg-white dark:bg-gray-800 dark:text-white h-full;
+  @apply p-12  h-full;
+
+  //   background: url('/assets/bg_daedalus_space.jpeg');
+  background: url('/assets/bg-resin.png');
+  background-position: 0 0;
+  background-size: 1920px;
+}
